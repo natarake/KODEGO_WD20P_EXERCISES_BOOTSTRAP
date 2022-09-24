@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>WD20P_EXERCISE09_LADRIDO</title>
+  </head>
+
+  <body class="bg-dark" style="max-width: 1200px">
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><img src="logo.jpg" class="rounded-3" height="40px" width="40px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">LATEST</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">POPULAR</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href=""
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >GENRE</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="" class="dropdown-item">ROMANCE</a>
+                </li>
+                <li>
+                  <a href="" class="dropdown-item">ACTION</a>
+                </li>
+                <li>
+                  <a href="" class="dropdown-item">COMEDY</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form action="" class="d-flex pe-3 pb-3" role="search">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search your anime..."
+              aria-label=""
+            />
+            <button class="btn btn-secondary" type="submit">Search</button>
+          </form>
+          <button
+            class="btn btn-secondary btn-warning ms-auto me-3"
+            type="submit"
+          >
+            <a href="signup.html" class="text-decoration-none text-light"
+              >Sign Up</a
+            >
+          </button>
+          <button class="btn btn-secondary btn-success" type="submit">
+            <a href="login.html" class="text-decoration-none text-light"
+              >Login</a
+            >
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="container-fluid text-light">
+        <aside><img class="img-fluid" src="bleach.jpg" /></aside>
+        <div class="row">
+          <div class="col-md-5 pt-3">
+            <article class="ps-2">
+              <h2>Bleach</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                quis purus ut dui elementum blandit. Morbi quis dictum enim.
+                Duis fermentum elit et fermentum commodo. Donec in tellus enim.
+                Nam hendrerit lacinia sapien eu pretium. Curabitur sit amet
+                eleifend sapien. Sed lorem mauris, cursus id magna ac, venenatis
+                vehicula ipsum.
+              </p>
+            </article>
+          </div>
+          <div class="col-md-1"></div>
+          <div
+            class="col-md-6 accordion accordion-flush pt-5 d-flex flex-column align-items-center justify-content-center"
+          >
+            <!-- accordion -->
+            <div id="faqs">
+              <!-- accordion 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="questionOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#answerOne"
+                    aria-expanded="true"
+                    aria-controls="answerOne"
+                  >
+                    Episode 1 - Lorem ipsum dolor
+                  </button>
+                </h2>
+                <div
+                  class="accordion-collapse collapse"
+                  id="answerOne"
+                  aria-labelledby="questionOne"
+                  data-bs-parent="#faqs"
+                >
+                  <div class="accordion-body">
+                    <p class="text-warning">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Deleniti, ab. Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Distinctio reiciendis ad nostrum
+                      architecto, ex error eveniet consequatur?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- accordion 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="questionTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#answerTwo"
+                    aria-expanded="false"
+                    aria-controls="answerTwo"
+                  >
+                    Episode 2
+                  </button>
+                </h2>
+                <div
+                  class="accordion-collapse collapse"
+                  id="answerTwo"
+                  aria-labelledby="questionTwo"
+                  data-bs-parent="#faqs"
+                >
+                  <div class="accordion-body">
+                    <p class="text-warning">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Deleniti, ab. Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Necessitatibus ad perspiciatis illo
+                      harum ullam repudiandae, maxime minus pariatur temporibus,
+                      non laborum. Quaerat, quia?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- accordion 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="questionThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#answerThree"
+                    aria-expanded="false"
+                    aria-controls="answerThree"
+                  >
+                    Episode 3
+                  </button>
+                </h2>
+                <div
+                  class="accordion-collapse collapse"
+                  id="answerThree"
+                  aria-labelledby="questionThree"
+                  data-bs-parent="#faqs"
+                >
+                  <div class="accordion-body">
+                    <p class="text-warning">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Deleniti, ab. Lorem ipsum dolor sit, amet consectetur
+                      adipisicing elit. Esse ipsam, cum neque eligendi
+                      praesentium hic, iure consectetur ut eos vero amet iste!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pagination -->
+
+            <div class="p-5">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination d-flex justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link" href="#">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div
+        class="container-fluid bg dark pt-3 border-top border-1 border-warning"
+      >
+        <ul class="d-flex justify-content-center list-unstyled">
+          <li>
+            <a href=""
+              ><i class="fa fa-linkedin text-warning px-2 fw-bold"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa fa-twitter text-warning px-2 fw-bold"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa fa-facebook text-warning px-2 fw-bold"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa fa-instagram text-warning px-2 fw-bold"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="text-warning text-center border-top border-2 p-2">
+        This project will not be possible without the help of Ms. Michelle of
+        KodeGo <br />&copy; 2022 Glenn Ladrido - WD20P Student <br />All Rights
+        Reserve
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+body {
+    padding: 0;
+    margin: 0;
+    max-width: 1200px;
+}
+
+/* carousel css */
+.carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    height: 90vh;
+}
+
+.carousel .carousel-indicators button {
+    background-color: #ffc107;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #ffc107;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #ffc107;
+}
+
+/* cards css */
+
+.card {
+    position: relative;
+  }
+  
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease-in;
+    background: rgba(0, 0, 0, 0.5);
+    }
+  
+.card:hover .card-img-overlay {
+    opacity: 1;
+    }
+
+
+.card-title {
+    position: absolute;
+    top: 50px;
+    left:20px;
+}
+
+.card-text {
+    position: absolute;
+    top: 80px;
+    left:20px;
+}
+
+.card .card-img-overlay button {
+    position: absolute;
+    top: 180px;
+    left:20px;
+}
+
+/* pagination css */
+.pagination > li > a {
+    background-color: white;
+    color: #ffc107;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+    color: #5a5a5a;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a {
+    color: white;
+    background-color: #ffc107 !Important;
+    border: solid 1px #ffc107 !Important;
+}
+
+.pagination > .active > a:hover {
+    background-color: #ffc107 !Important;
+    border: solid 1px #ffc107;
+}
+
+/* accordion css */
+
+.accordion-item {
+    border: 1px solid rgba(35, 65, 100, 0.15)
+}
+
+.accordion-button:not(.collapsed) {
+    color: inherit;
+    background-color: #ffc107;
+    color: grey;
+}
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0%) invert(50%);
+}
+
+.accordion-button:focus{
+    box-shadow: inherit;
+}
